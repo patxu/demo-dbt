@@ -1,7 +1,6 @@
 
 /*
-    This is a data model that pulls user data from all sources (Customer 360)
-    If you need access to all users captured across Sales, Marketing, Support, and Product.
+    High LTV
 */
 
 {{ config(materialized='table') }}
