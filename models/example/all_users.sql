@@ -1,10 +1,7 @@
 
 /*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml
-
-    Try changing "table" to "view" below
+    This is a data model that pulls data from all sources (Customer 360)
+    If you need access to all users captured across Sales, Marketing, Support, and Product.
 */
 
 {{ config(materialized='table') }}
@@ -18,7 +15,7 @@ with source_data as (
 )
 
 select *
-from PRISTINE_ECOMMERCE.HIGHTOUCH_AUDIT.SYNC_RUNS
+from PRISTINE_ECOMMERCE.PUBLIC.USERS
 
 /*
     Uncomment the line below to remove records with null `id` values
