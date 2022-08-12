@@ -2,8 +2,8 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: all_users
+      description: "All users in available in the data warehouse. Pulling data from Sales, Marketing, Support, and Product."
       columns:
           - name: id
             description: "The primary key for this table"
