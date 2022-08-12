@@ -15,7 +15,7 @@ SELECT
   last_name,
   email,
   gender,
-  DATEADD(hours, engagement_last_7_days, CURRENT_DATE()) AS "SIGN_UP_DATE",
+  DATEADD(hours, -engagement_last_7_days, CURRENT_DATE()) AS "SIGN_UP_DATE",
   CEIL(engagement_last_7_days/4) AS "NUM_BLOG_POSTS_VIEWED",
   CEIL(engagement_last_7_days/3) AS "PAGEVIEWS",
   brand_affinity AS "FAVORITE_BRAND",
