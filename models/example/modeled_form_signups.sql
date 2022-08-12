@@ -22,7 +22,7 @@ SELECT
   vip_customer AS "AD_CONVERSION",
   engagement_last_7_days
 FROM
-  all_users ORDER BY RANDOM() limit 50
+  PRISTINE_ECOMMERCE.PUBLIC.USERS ORDER BY RANDOM() limit 50
 
 /*
     Uncomment the line below to remove records with null `id` values
