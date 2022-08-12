@@ -15,7 +15,7 @@ with source_data as (
 )
 
 select *
-from PRISTINE_ECOMMERCE.PUBLIC.USERS
+from PRISTINE_ECOMMERCE.PUBLIC.EVENTS
 
 /*
     Uncomment the line below to remove records with null `id` values
