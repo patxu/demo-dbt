@@ -42,23 +42,22 @@ models:
             tests:
                 - unique
                 - not_null
-
-      - name: modeled_high_LTV_customers.sql
-      description: "High LTV Customers"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-      - name: modeled_server_side_events.sql
-      description: "Events on server-side"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+    - name: modeled_high_LTV_customers.sql
+    description: "High LTV Customers"
+    columns:
+        - name: id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
+    - name: modeled_server_side_events.sql
+    description: "Events on server-side"
+    columns:
+        - name: id
+          description: "The primary key for this table"
+          tests:
+              - unique
+              - not_null
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
