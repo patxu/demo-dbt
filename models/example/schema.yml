@@ -2,6 +2,14 @@
 version: 2
 
 models:
+    - name: modeled_form_signups.sql
+      description: "Inbound form signups found on landing page, blog posts, social posts, ad campaigns, etc."
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
     - name: all_users
       description: "CUSTOMER 360. All users in available in the data warehouse. Pulling data from Sales, Marketing, Support, and Product."
       columns:
