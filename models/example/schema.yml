@@ -10,7 +10,55 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: all_events
+      description: "Events captured on client product and server-side applications"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: modeled_at_risk_customers.sql
+      description: "At risk customers - used to target customers for re-engagement"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: modeled_available_catalog.sql
+      description: "Catalog of available content"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: modeled_client_side_events.sql
+      description: "Events captured on client-side"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
 
+      - name: modeled_high_LTV_customers.sql
+      description: "High LTV Customers"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+      - name: modeled_server_side_events.sql
+      description: "Events on server-side"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
