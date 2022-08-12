@@ -1,3 +1,0 @@
-packages:
-  - package: hightouchio/dbt_hightouch
-    version: 0.1.3
