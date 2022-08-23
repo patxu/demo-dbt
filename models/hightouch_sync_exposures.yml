@@ -36,3 +36,36 @@ exposures:
         sync_id: '49134'
         sync_slug: all-users-to-salesforce-trsbv
         sync_name: All Users
+  - name: Hightouch Sync - all-users-table-to-hubspot-up9j2
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/49152
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/591235)**
+      to destination
+      **[Hubspot](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Model columns used by this sync
+
+      * EMAIL
+
+      * FIRST_NAME
+
+      * GENDER
+
+      * LAST_NAME
+
+      * USER_ID
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '49152'
+        sync_slug: all-users-table-to-hubspot-up9j2
+        sync_name: All Users table
