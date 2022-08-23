@@ -104,3 +104,36 @@ exposures:
         sync_id: '49152'
         sync_slug: all-users-table-to-hubspot-up9j2
         sync_name: All Users table
+  - name: Hightouch Sync - all-users-to-salesforce-gqaro
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/49231
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/591341)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * LAST_NAME
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * VIP_CUSTOMER
+
+      * BRAND_AFFINITY
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '49231'
+        sync_slug: all-users-to-salesforce-gqaro
+        sync_name: All Users
