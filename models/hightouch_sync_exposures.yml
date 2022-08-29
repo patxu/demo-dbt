@@ -36,34 +36,3 @@ exposures:
         sync_id: '49134'
         sync_slug: all-users-to-salesforce-trsbv
         sync_name: All Users
-  - name: Hightouch Sync - zalora-users-to-braze-wa578
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/49855
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/592277)**
-      to destination
-      **[Braze](https://app.hightouch.io/ecommerce-pristine-demo/destinations/56096)**
-      of type **braze**
-
-
-      ### Model columns used by this sync
-
-      * EMAIL
-
-      * FIRST_NAME
-
-      * GENDER
-
-      * LAST_NAME
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '49855'
-        sync_slug: zalora-users-to-braze-wa578
-        sync_name: Zalora Users
