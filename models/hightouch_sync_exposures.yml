@@ -3,7 +3,7 @@
 
 version: 2
 exposures:
-  - name: Hightouch Sync - all-users-to-salesforce-trsbv
+  - name: Hightouch-Sync-all-users-to-salesforce-trsbv
     type: application
     owner:
       email: kevintran@hightouch.io
