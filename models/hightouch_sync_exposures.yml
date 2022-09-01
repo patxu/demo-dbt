@@ -3,6 +3,29 @@
 
 version: 2
 exposures:
+  - name: Hightouch-Sync-form-submission-to-salesforce-rwal8
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('modeled_form_signups')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/50538
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_form_signups](https://app.hightouch.io/ecommerce-pristine-demo/models/593041)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '50538'
+        sync_slug: form-submission-to-salesforce-rwal8
+        sync_name: Form Submission
   - name: Hightouch-Sync-form-submission-to-salesforce-hbxtb
     type: application
     owner:
