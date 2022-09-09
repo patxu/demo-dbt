@@ -2,37 +2,4 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures:
-  - name: Hightouch-Sync-users-vanta-to-salesforce-081d5
-    type: application
-    owner:
-      email: andrewjesien@hightouch.io
-      name: Andrew Jesien
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/51073
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/594433)**
-      to destination
-      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Model columns used by this sync
-
-      * LAST_NAME
-
-      * FIRST_NAME
-
-      * ENGAGEMENT_LAST_7_DAYS
-
-      * VIP_CUSTOMER
-
-      * BRAND_AFFINITY
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '51073'
-        sync_slug: users-vanta-to-salesforce-081d5
-        sync_name: Users Vanta
+exposures: []
