@@ -2,4 +2,29 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-users-to-hubspot-67zo0
+    type: application
+    owner:
+      email: joshcouper@hightouch.io
+      name: Josh Couper
+    depends_on:
+      - ref('modeled_form_signups')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/51783
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_form_signups](https://app.hightouch.io/ecommerce-pristine-demo/models/595470)**
+      to destination
+      **[Hubspot](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Model columns used by this sync
+
+      * GENDER
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '51783'
+        sync_slug: users-to-hubspot-67zo0
+        sync_name: Users
