@@ -2,4 +2,31 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-all-users-to-salesforce-vkhew
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('modeled_form_signups')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/52919
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_form_signups](https://app.hightouch.io/ecommerce-pristine-demo/models/598575)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * LAST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '52919'
+        sync_slug: all-users-to-salesforce-vkhew
+        sync_name: All Users
