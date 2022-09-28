@@ -30,6 +30,35 @@ exposures:
         sync_id: '53963'
         sync_slug: all-users-to-salesforce-v1asg
         sync_name: All Users
+  - name: Hightouch-Sync-users-shippit-to-salesforce-rkttr
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/53972
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/600344)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * EMAIL
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '53972'
+        sync_slug: users-shippit-to-salesforce-rkttr
+        sync_name: users - shippit
   - name: Hightouch-Sync-users-tets-to-braze-5y3m2
     type: application
     owner:
