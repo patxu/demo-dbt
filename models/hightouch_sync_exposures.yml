@@ -85,3 +85,30 @@ exposures:
         sync_id: '54990'
         sync_slug: michelle-snow-demo-to-salesforce-uzr64
         sync_name: Michelle Snow Demo
+  - name: Hightouch-Sync-all-users-to-salesforce-hyesc
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/55073
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/602026)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * LAST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '55073'
+        sync_slug: all-users-to-salesforce-hyesc
+        sync_name: All Users
