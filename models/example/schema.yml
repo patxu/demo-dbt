@@ -2,6 +2,14 @@
 version: 2
 
 models:
+    - name: modeled_users_with_product_usage.sql
+      description: "Users modeled with product usage data"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
     - name: modeled_form_signups.sql
       description: "Inbound form signups found on landing page, blog posts, social posts, ad campaigns, etc."
       columns:
