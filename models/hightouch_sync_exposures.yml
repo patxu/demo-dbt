@@ -32,3 +32,36 @@ exposures:
         sync_id: '56910'
         sync_slug: obviously-user-demos-to-facebook-audiences-3037v
         sync_name: obviously user demos
+  - name: Hightouch-Sync-all-users-with-prod-data-to-salesforce-v0swi
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('modeled_users_with_product_usage')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/56961
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_users_with_product_usage](https://app.hightouch.io/ecommerce-pristine-demo/models/605102)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * TRIAL_USER
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * DASHBOARD_VIEWS
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '56961'
+        sync_slug: all-users-with-prod-data-to-salesforce-v0swi
+        sync_name: All Users with Prod Data
