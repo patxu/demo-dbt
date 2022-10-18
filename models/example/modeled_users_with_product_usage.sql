@@ -2,8 +2,13 @@
 
 /*
     This is a data model that pulls user data from all sources (Customer 360)
-    If you need access to all users captured across Sales, Marketing, Support, and Product.
+    This joins data with product usage data to better understand how users are using the product.
 */
+
+
+
+
+
 
 {{ config(materialized='table') }}
 
