@@ -20,7 +20,6 @@ select
   last_name,
   email,
   CEIL(engagement_last_7_days/4) AS "DASHBOARD_VIEWS",
-  CEIL(engagement_last_7_days/3) AS "PAGEVIEWS",
   vip_customer AS "TRIAL_USER",
   vip_customer,
   engagement_last_7_days,
