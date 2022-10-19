@@ -2,4 +2,27 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-users-dbt-model-to-s-ftp-testing-3oo7w
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/57151
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/605514)**
+      to destination **[sFTP
+      Testing](https://app.hightouch.io/ecommerce-pristine-demo/destinations/62599)**
+      of type **sftp**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '57151'
+        sync_slug: users-dbt-model-to-s-ftp-testing-3oo7w
+        sync_name: Users dbt model
