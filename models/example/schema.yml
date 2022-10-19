@@ -2,6 +2,14 @@
 version: 2
 
 models:
+    - name: modeled_users_with_lead_scores.sql
+      description: "Users modeled with lead score data"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
     - name: modeled_users_with_product_usage.sql
       description: "Users modeled with product usage data"
       columns:
