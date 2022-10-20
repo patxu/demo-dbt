@@ -19,9 +19,7 @@ exposures:
       of type **campaigner**
 
 
-      ### Model columns used by this sync
-
-      * undefined
+      ### This sync uses all model columns
     tags: []
     meta:
       hightouch:
