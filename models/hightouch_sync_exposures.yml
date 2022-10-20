@@ -3,6 +3,31 @@
 
 version: 2
 exposures:
+  - name: Hightouch-Sync-all-users-w-product-data-to-campaigner-n9oi1
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('modeled_users_with_product_usage')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/57469
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_users_with_product_usage](https://app.hightouch.io/ecommerce-pristine-demo/models/605892)**
+      to destination
+      **[Campaigner](https://app.hightouch.io/ecommerce-pristine-demo/destinations/63689)**
+      of type **campaigner**
+
+
+      ### Model columns used by this sync
+
+      * undefined
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '57469'
+        sync_slug: all-users-w-product-data-to-campaigner-n9oi1
+        sync_name: All Users w Product Data
   - name: Hightouch-Sync-all-users-w-product-data-to-salesforce-1666y
     type: application
     owner:
