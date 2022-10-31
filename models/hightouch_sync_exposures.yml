@@ -3,41 +3,6 @@
 
 version: 2
 exposures:
-  - name: Hightouch-Sync-all-users-to-salesforce-in4vm
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('modeled_users_with_product_usage')
-    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/58565
-    description: >-
-      Hightouch Sync from dbt model
-      **[modeled_users_with_product_usage](https://app.hightouch.io/ecommerce-pristine-demo/models/607789)**
-      to destination
-      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Model columns used by this sync
-
-      * PAGEVIEWS
-
-      * LAST_NAME
-
-      * FIRST_NAME
-
-      * ENGAGEMENT_LAST_7_DAYS
-
-      * DASHBOARD_VIEWS
-
-      * TRIAL_USER
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '58565'
-        sync_slug: all-users-to-salesforce-in4vm
-        sync_name: All Users
   - name: Hightouch-Sync-all-users-w-product-data-to-salesforce-1666y
     type: application
     owner:
