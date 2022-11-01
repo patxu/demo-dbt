@@ -28,18 +28,6 @@ exposures:
       * EMAIL
 
       * VIP_CUSTOMER
-
-      * ENGAGEMENT_LAST_7_DAYS
-
-      * DASHBOARD_VIEWS
-
-      * SIGN_UP_DATE
-
-      * NUM_BLOG_POSTS_VIEWED
-
-      * FAVORITE_BRAND
-
-      * AD_CONVERSION
     tags: []
     meta:
       hightouch:
