@@ -3,6 +3,35 @@
 
 version: 2
 exposures:
+  - name: Hightouch-Sync-all-users-to-microsoft-dynamics-365
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/60917
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/611127)**
+      to destination **[Microsoft Dynamics
+      365](https://app.hightouch.io/ecommerce-pristine-demo/destinations/66190)**
+      of type **microsoft-dynamics**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * VIP_CUSTOMER
+
+      * LAST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '60917'
+        sync_slug: all-users-to-microsoft-dynamics-365
+        sync_name: All Users
   - name: Hightouch-Sync-all-users-to-salesforce
     type: application
     owner:
