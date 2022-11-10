@@ -23,8 +23,6 @@ exposures:
 
       * FIRST_NAME
 
-      * VIP_CUSTOMER
-
       * LAST_NAME
     tags: []
     meta:
