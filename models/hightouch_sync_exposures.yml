@@ -26,3 +26,32 @@ exposures:
         sync_id: '61532'
         sync_slug: johns-demo-users-model-to-braze-cohorts
         sync_name: johns demo users model
+  - name: Hightouch-Sync-demo-users-1234-to-salesforce
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/61622
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/612486)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * EMAIL
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '61622'
+        sync_slug: demo-users-1234-to-salesforce
+        sync_name: demo users 1234
