@@ -44,3 +44,48 @@ exposures:
         sync_id: '62334'
         sync_slug: all-users-to-salesforce
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-iterable
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/62344
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/613656)**
+      to destination
+      **[Iterable](https://app.hightouch.io/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * USER_ID
+
+      * VIP_CUSTOMER
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * USER_ID
+
+      * FIRST_NAME
+
+      * LAST_NAME
+
+      * VIP_CUSTOMER
+
+      * SIGN_UP_DATE
+
+      * EMAIL
+
+      * LAST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '62344'
+        sync_slug: all-users-to-iterable
+        sync_name: All Users
