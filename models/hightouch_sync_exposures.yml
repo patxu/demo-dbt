@@ -36,3 +36,36 @@ exposures:
         sync_id: '62799'
         sync_slug: all-users-to-hubspot
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-hubspot-2
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/62822
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/614729)**
+      to destination
+      **[Hubspot](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * LAST_NAME
+
+      * SIGN_UP_DATE
+
+      * USER_ID
+
+      * USER_ID
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '62822'
+        sync_slug: all-users-to-hubspot-2
+        sync_name: All Users
