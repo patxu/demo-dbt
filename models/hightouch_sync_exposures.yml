@@ -44,6 +44,35 @@ exposures:
         sync_id: '62567'
         sync_slug: spotify-users-to-salesforce
         sync_name: Spotify Users
+  - name: Hightouch-Sync-users-to-braze
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/62640
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/614315)**
+      to destination
+      **[Braze](https://app.hightouch.io/ecommerce-pristine-demo/destinations/56096)**
+      of type **braze**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * EMAIL
+
+      * LAST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '62640'
+        sync_slug: users-to-braze
+        sync_name: users
   - name: Hightouch-Sync-all-users-to-salesforce
     type: application
     owner:
