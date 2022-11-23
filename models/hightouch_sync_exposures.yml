@@ -56,6 +56,29 @@ exposures:
         sync_id: '62905'
         sync_slug: aia-to-salesforce-marketing-cloud
         sync_name: 'aia '
+  - name: Hightouch-Sync-credit-score-600-to-iterable
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/63240
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/615197)**
+      to destination
+      **[Iterable](https://app.hightouch.io/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '63240'
+        sync_slug: credit-score-600-to-iterable
+        sync_name: Credit Score <600
   - name: Hightouch-Sync-all-users-to-iterable
     type: application
     owner:
