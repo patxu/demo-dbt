@@ -2,4 +2,57 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-aia-to-salesforce-marketing-cloud
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/62905
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/614799)**
+      to destination **[Salesforce Marketing
+      Cloud](https://app.hightouch.io/ecommerce-pristine-demo/destinations/56360)**
+      of type **sfmc**
+
+
+      ### Model columns used by this sync
+
+      * ACTIVE_POC
+
+      * LEAD_GRADE
+
+      * LEAD_SCORE
+
+      * AD_CONVERSION
+
+      * FAVORITE_BRAND
+
+      * PAGEVIEWS
+
+      * NUM_BLOG_POSTS_VIEWED
+
+      * SIGN_UP_DATE
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * VIP_CUSTOMER
+
+      * TRIAL_USER
+
+      * DASHBOARD_VIEWS
+
+      * EMAIL
+
+      * LAST_NAME
+
+      * FIRST_NAME
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '62905'
+        sync_slug: aia-to-salesforce-marketing-cloud
+        sync_name: 'aia '
