@@ -80,3 +80,26 @@ exposures:
         sync_id: '64083'
         sync_slug: users-to-braze
         sync_name: Users
+  - name: Hightouch-Sync-parents-who-did-not-donate-to-iterable
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/64223
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/615663)**
+      to destination
+      **[Iterable](https://app.hightouch.io/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '64223'
+        sync_slug: parents-who-did-not-donate-to-iterable
+        sync_name: Parents who did not donate
