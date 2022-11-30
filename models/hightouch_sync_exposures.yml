@@ -2,4 +2,45 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-partners-to-salesforce
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/65762
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/616021)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * VIP_CUSTOMER
+
+      * PAGEVIEWS
+
+      * TRIAL_USER
+
+      * SIGN_UP_DATE
+
+      * AD_CONVERSION
+
+      * ACTIVE_POC
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '65762'
+        sync_slug: partners-to-salesforce
+        sync_name: Partners
