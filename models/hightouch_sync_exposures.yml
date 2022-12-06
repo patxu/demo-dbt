@@ -55,3 +55,28 @@ exposures:
         sync_id: '66847'
         sync_slug: saras-users-demo-to-facebook-custom-audiences
         sync_name: saras users demo
+  - name: Hightouch-Sync-cs-700-to-iterable
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/66909
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/617047)**
+      to destination
+      **[Iterable](https://app.hightouch.io/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Model columns used by this sync
+
+      * ENGAGEMENT_LAST_7_DAYS
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '66909'
+        sync_slug: cs-700-to-iterable
+        sync_name: CS < 700
