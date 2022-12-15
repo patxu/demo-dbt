@@ -58,59 +58,6 @@ exposures:
         sync_id: '68221'
         sync_slug: all-users-to-heap-hb
         sync_name: All Users
-  - name: Hightouch-Sync-demo-users-to-salesforce
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/68267
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/620053)**
-      to destination
-      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Model columns used by this sync
-
-      * ACTIVE_POC
-
-      * LAST_NAME
-
-      * FIRST_NAME
-
-      * EMAIL
-
-      * VIP_CUSTOMER
-
-      * ENGAGEMENT_LAST_7_DAYS
-
-      * DASHBOARD_VIEWS
-
-      * PAGEVIEWS
-
-      * TRIAL_USER
-
-      * SIGN_UP_DATE
-
-      * NUM_BLOG_POSTS_VIEWED
-
-      * FAVORITE_BRAND
-
-      * AD_CONVERSION
-
-      * LEAD_SCORE
-
-      * LEAD_GRADE
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '68267'
-        sync_slug: demo-users-to-salesforce
-        sync_name: demo users
   - name: Hightouch-Sync-all-users-to-salesforce
     type: application
     owner:
