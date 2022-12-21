@@ -2,33 +2,4 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures:
-  - name: Hightouch-Sync-likely-to-purchase-toyota-oakland-to-facebook-audiences
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/69298
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/624498)**
-      to destination **[Facebook
-      Audiences](https://app.hightouch.io/ecommerce-pristine-demo/destinations/58394)**
-      of type **facebook**
-
-
-      ### Model columns used by this sync
-
-      * EMAIL
-
-      * FIRST_NAME
-
-      * LAST_NAME
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '69298'
-        sync_slug: likely-to-purchase-toyota-oakland-to-facebook-audiences
-        sync_name: Likely to Purchase - Toyota Oakland
+exposures: []
