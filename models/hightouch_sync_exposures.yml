@@ -38,3 +38,81 @@ exposures:
         sync_id: '71776'
         sync_slug: all-users-to-salesforce
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-demo-customer-io
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('modeled_users_with_product_usage')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/71925
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_users_with_product_usage](https://app.hightouch.io/ecommerce-pristine-demo/models/636016)**
+      to destination **[Demo Customer
+      IO](https://app.hightouch.io/ecommerce-pristine-demo/destinations/65168)**
+      of type **customerio**
+
+
+      ### Model columns used by this sync
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * TRIAL_USER
+
+      * PAGEVIEWS
+
+      * DASHBOARD_VIEWS
+
+      * EMAIL
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * USER_ID
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '71925'
+        sync_slug: all-users-to-demo-customer-io
+        sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-customer-io
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('modeled_users_with_product_usage')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/71927
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_users_with_product_usage](https://app.hightouch.io/ecommerce-pristine-demo/models/636016)**
+      to destination
+      **[Customer.io](https://app.hightouch.io/ecommerce-pristine-demo/destinations/63926)**
+      of type **customerio**
+
+
+      ### Model columns used by this sync
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * TRIAL_USER
+
+      * PAGEVIEWS
+
+      * DASHBOARD_VIEWS
+
+      * EMAIL
+
+      * LAST_NAME
+
+      * FIRST_NAME
+
+      * USER_ID
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '71927'
+        sync_slug: all-users-to-customer-io
+        sync_name: All Users
