@@ -54,6 +54,57 @@ exposures:
         sync_id: '71929'
         sync_slug: all-users-to-salesforce-2
         sync_name: All users
+  - name: Hightouch-Sync-all-users-to-salesforce-3
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/71975
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/636550)**
+      to destination
+      **[Salesforce](https://app.hightouch.io/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Model columns used by this sync
+
+      * FIRST_NAME
+
+      * LAST_NAME
+
+      * VIP_CUSTOMER
+
+      * ENGAGEMENT_LAST_7_DAYS
+
+      * DASHBOARD_VIEWS
+
+      * PAGEVIEWS
+
+      * TRIAL_USER
+
+      * SIGN_UP_DATE
+
+      * NUM_BLOG_POSTS_VIEWED
+
+      * FAVORITE_BRAND
+
+      * AD_CONVERSION
+
+      * LEAD_SCORE
+
+      * LEAD_GRADE
+
+      * ACTIVE_POC
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '71975'
+        sync_slug: all-users-to-salesforce-3
+        sync_name: All Users
   - name: Hightouch-Sync-all-users-to-salesforce
     type: application
     owner:
