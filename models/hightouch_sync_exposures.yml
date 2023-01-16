@@ -167,3 +167,28 @@ exposures:
         sync_id: '71927'
         sync_slug: all-users-to-customer-io
         sync_name: All Users
+  - name: Hightouch-Sync-users-sm-to-intercom-ht-dev
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.io/ecommerce-pristine-demo/syncs/72299
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.io/ecommerce-pristine-demo/models/637978)**
+      to destination **[Intercom (HT
+      Dev)](https://app.hightouch.io/ecommerce-pristine-demo/destinations/68899)**
+      of type **intercom**
+
+
+      ### Model columns used by this sync
+
+      * EMAIL
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '72299'
+        sync_slug: users-sm-to-intercom-ht-dev
+        sync_name: Users SM
