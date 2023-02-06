@@ -3,6 +3,67 @@
 
 version: 2
 exposures:
+  - name: Hightouch-Sync-all-users-to-klaviyo-keb
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/91821
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/650792)**
+      to destination **[Klaviyo
+      (keb)](https://app.hightouch.com/ecommerce-pristine-demo/destinations/67594)**
+      of type **klaviyo**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `$first_name`
+
+      * `LAST_NAME` to `$last_name`
+
+      * `ACTIVE_POC` to `ACTIVE_POC`
+
+      * `LEAD_GRADE` to `LEAD_GRADE`
+
+      * `LEAD_SCORE` to `LEAD_SCORE`
+
+      * `AD_CONVERSION` to `AD_CONVERSION`
+
+      * `FAVORITE_BRAND` to `FAVORITE_BRAND`
+
+      * `PAGEVIEWS` to `PAGEVIEWS`
+
+      * `NUM_BLOG_POSTS_VIEWED` to `NUM_BLOG_POSTS_VIEWED`
+
+      * `SIGN_UP_DATE` to `SIGN_UP_DATE`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `TRIAL_USER` to `TRIAL_USER`
+
+      * `DASHBOARD_VIEWS` to `DASHBOARD_VIEWS`
+
+      * `EMAIL` to `EMAIL`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `FIRST_NAME` to `FIRST_NAME`
+
+      * `USER_ID` to `USER_ID`
+
+      * `EMAIL` to `$email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '91821'
+        sync_slug: all-users-to-klaviyo-keb
+        sync_name: All Users
   - name: Hightouch-Sync-bdc-users-to-salesforce
     type: application
     owner:
