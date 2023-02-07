@@ -64,6 +64,35 @@ exposures:
         sync_id: '91821'
         sync_slug: all-users-to-klaviyo-keb
         sync_name: All Users
+  - name: Hightouch-Sync-users-to-facebook-audiences
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('modeled_users_with_product_usage')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/92462
+    description: >-
+      Hightouch Sync from dbt model
+      **[modeled_users_with_product_usage](https://app.hightouch.com/ecommerce-pristine-demo/models/651154)**
+      to destination **[Facebook
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `FN`
+
+      * `EMAIL` to `EMAIL`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '92462'
+        sync_slug: users-to-facebook-audiences
+        sync_name: Users
   - name: Hightouch-Sync-bdc-users-to-salesforce
     type: application
     owner:
