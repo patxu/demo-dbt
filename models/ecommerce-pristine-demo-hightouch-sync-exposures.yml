@@ -64,3 +64,34 @@ exposures:
         sync_id: '91821'
         sync_slug: all-users-to-klaviyo-keb
         sync_name: All Users
+  - name: Hightouch-Sync-sea-users-to-salesforce
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/95217
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/652691)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `LastName`
+
+      * `FIRST_NAME` to `FirstName`
+
+      * `EMAIL` to `Email`
+
+      * `USER_ID` to `External_ID__c`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '95217'
+        sync_slug: sea-users-to-salesforce
+        sync_name: sea users
