@@ -64,31 +64,6 @@ exposures:
         sync_id: '91821'
         sync_slug: all-users-to-klaviyo-keb
         sync_name: All Users
-  - name: Hightouch-Sync-active-subscribers-to-facebook-audiences
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/101915
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/656187)**
-      to destination **[Facebook
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `EMAIL`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '101915'
-        sync_slug: active-subscribers-to-facebook-audiences
-        sync_name: Active Subscribers
   - name: Hightouch-Sync-active-subscribers-to-klaviyo-keb
     type: application
     owner:
@@ -113,6 +88,31 @@ exposures:
       hightouch:
         sync_id: '101920'
         sync_slug: active-subscribers-to-klaviyo-keb
+        sync_name: Active Subscribers
+  - name: Hightouch-Sync-active-subscribers-to-facebook-audiences
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/101915
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/656187)**
+      to destination **[Facebook
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '101915'
+        sync_slug: active-subscribers-to-facebook-audiences
         sync_name: Active Subscribers
   - name: Hightouch-Sync-claim-users-to-salesforce
     type: application
