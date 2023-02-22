@@ -36,6 +36,35 @@ exposures:
         sync_id: '117183'
         sync_slug: users-dfs-to-braze
         sync_name: Users DFS
+  - name: Hightouch-Sync-test-fashion-users-to-salesforce-marketing-cloud
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/136732
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/662956)**
+      to destination **[Salesforce Marketing
+      Cloud](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56360)**
+      of type **sfmc**
+
+
+      ### Columns used by this sync
+
+      * `LEAD_SCORE` to `lead_score`
+
+      * `ACTIVE_POC` to `ACTIVE_POC`
+
+      * `USER_ID` to `user_Id`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '136732'
+        sync_slug: test-fashion-users-to-salesforce-marketing-cloud
+        sync_name: Test - Fashion Users
   - name: Hightouch-Sync-johns-demo-users-to-facebook-custom-audiences
     type: application
     owner:
