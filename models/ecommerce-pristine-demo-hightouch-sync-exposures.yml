@@ -26,29 +26,6 @@ exposures:
         sync_id: '266622'
         sync_slug: all-users-to-salesforce-3
         sync_name: All Users
-  - name: Hightouch-Sync-trial-drop-off-to-iterable
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/253805
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/674901)**
-      to destination
-      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
-      of type **iterable**
-
-
-      ### This sync uses all model columns
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '253805'
-        sync_slug: trial-drop-off-to-iterable
-        sync_name: Trial Drop Off
   - name: Hightouch-Sync-all-users-to-facebook-audiences
     type: application
     owner:
