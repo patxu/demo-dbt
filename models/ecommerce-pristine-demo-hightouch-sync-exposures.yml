@@ -3,45 +3,6 @@
 
 version: 2
 exposures:
-  - name: Hightouch-Sync-trial-drop-users-to-iterable
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/321109
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/679165)**
-      to destination
-      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
-      of type **iterable**
-
-
-      ### Columns used by this sync
-
-      * `LAST_NAME` to `LAST_NAME`
-
-      * `USER_ID` to `USER_ID`
-
-      * `EMAIL` to `email`
-
-      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
-
-      * `FIRST_NAME` to `FIRST_NAME`
-
-      * `SIGN_UP_DATE` to `signupDate`
-
-      * `EMAIL` to `EMAIL`
-
-      * `USER_ID` to `userId`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '321109'
-        sync_slug: trial-drop-users-to-iterable
-        sync_name: Trial drop users
   - name: Hightouch-Sync-all-users-to-salesforce-2
     type: application
     owner:
