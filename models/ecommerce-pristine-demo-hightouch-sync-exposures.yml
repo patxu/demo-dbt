@@ -107,3 +107,30 @@ exposures:
         sync_id: '396080'
         sync_slug: all-users-to-salesforce-3
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-salesforce-marketing-cloud
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/397666
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/684484)**
+      to destination **[Salesforce Marketing
+      Cloud](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56360)**
+      of type **sfmc**
+
+
+      ### Columns used by this sync
+
+      * `LEAD_SCORE` to `lead score`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '397666'
+        sync_slug: all-users-to-salesforce-marketing-cloud
+        sync_name: All Users
