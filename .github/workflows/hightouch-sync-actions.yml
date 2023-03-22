@@ -15,6 +15,9 @@ jobs:
   dbt-build:
     runs-on: ubuntu-latest
     steps:
+    - name: Install Dependencies
+      run: |
+        pip install dbt-snowflake
     - name: Build dbt models
       run: |
         dbt build
