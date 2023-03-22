@@ -20,4 +20,4 @@ jobs:
         pip install dbt-snowflake
     - name: Build dbt models
       run: |
-        ls
+        dbt run
