@@ -1,0 +1,20 @@
+name: Hightouch Sync
+
+run-name: Triggering a Hightouch Sync
+
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:  
+  HIGHTOUCH_API_KEY: ${{ secrets.HIGHTOUCH_API_KEY }}
+
+jobs:
+  dbt-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build dbt models
+      run: |
+        dbt build
