@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     name: Trigger all Hightouch syncs
     steps:
-    - uses: hightouchio/hightouch-dbt-sync-action@1.0.0
+    - uses: hightouchio/hightouch-dbt-sync-action@v1.0.0
