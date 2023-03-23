@@ -1,6 +1,6 @@
-name: Hightouch Sync
+name: Hightouch Syncs
 
-run-name: Triggering a Hightouch Sync
+run-name: Triggering Hightouch Syncs
 
 on: 
   push:
@@ -12,12 +12,8 @@ env:
   HIGHTOUCH_API_KEY: ${{ secrets.HIGHTOUCH_API_KEY }}
 
 jobs:
-  dbt-build:
+  trigger-hightouch-sync:
     runs-on: ubuntu-latest
+    name: Trigger all Hightouch syncs
     steps:
-    - name: Install Dependencies
-      run: |
-        pip install dbt-snowflake
-    - name: Build dbt models
-      run: |
-        dbt run
+    - uses: hightouchio/hightouch-dbt-sync-actionv1.0.0
