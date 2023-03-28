@@ -154,3 +154,28 @@ exposures:
         sync_id: '485395'
         sync_slug: events-to-facebook-capi
         sync_name: Events
+  - name: Hightouch-Sync-all-users-to-google-ads
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/485545
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/689735)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '485545'
+        sync_slug: all-users-to-google-ads
+        sync_name: All Users
