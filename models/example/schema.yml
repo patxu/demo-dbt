@@ -61,7 +61,6 @@ models:
             description: "Whether or not the user is in a trial (true/false)"
           - name: VIP_CUSTOMER
             description: "Whether or not the user is a VIP customer (true/false)"
-            
     - name: all_events
       description: "Events captured on client product and server-side applications"
       columns:
