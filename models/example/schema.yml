@@ -33,6 +33,34 @@ models:
             description: "The external user ID of the user"
           - name: ACTIVE_POC
             description: "Whether or not the user is in a POC (true/false)"
+          - name: AD_CONVERSION
+            description: "Whether or not the user converted from an ad (true/false)"
+          - name: DASHBOARD_VIEWS
+            description: "How many times the user has viewed a dashboard"
+          - name: EMAIL
+            description: "The user's primary email"
+          - name: ENGAGEMENT_LAST_7_DAYS
+            description: "Engagement score 1-100 from data eng team"
+          - name: FAVORITE_BRAND
+            description: "The user's favorite brand based on purchase history"
+          - name: FIRST_NAME
+            description: "The user's first name"
+          - name: LAST_NAME
+            description: "The user's last name"
+          - name: LEAD_GRADE
+            description: "A grade for the user's health as a lead 1-100"
+          - name: LEAD_SCORE
+            description: "A cumulative score for lead behavior based on actions in-app"
+          - name: NUM_BLOG_POSTS_VIEWED
+            description: "How many blog posts the user viewed"
+          - name: PAGEVIEWS
+            description: "Total number of pageviews the user triggered"
+          - name: SIGN_UP_DATE
+            description: "Date the user signed up on"
+          - name: TRIAL_USER
+            description: "Whether or not the user is in a trial (true/false)"
+          - name: VIP_CUSTOMER
+            description: "Whether or not the user is a VIP customer (true/false)"
             
     - name: all_events
       description: "Events captured on client product and server-side applications"
