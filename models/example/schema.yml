@@ -27,7 +27,7 @@ models:
                 - unique
                 - not_null
     - name: all_users
-      description: "CUSTOMER 360. All users in available in the data warehouse. Pulling data from Sales, Marketing, Support, and Product."
+      description: "CUSTOMER 360 data. All users in available in the data warehouse. Pulling data from Sales, Marketing, Support, and Product."
       columns:
           - name: USER_ID
             description: "The external user ID of the user"
