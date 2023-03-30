@@ -29,11 +29,11 @@ models:
     - name: all_users
       description: "CUSTOMER 360. All users in available in the data warehouse. Pulling data from Sales, Marketing, Support, and Product."
       columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+          - name: USER_ID
+            description: "The external user ID of the user"
+          - name: ACTIVE_POC
+            description: "Whether or not the user is in a POC (true/false)"
+            
     - name: all_events
       description: "Events captured on client product and server-side applications"
       columns:
