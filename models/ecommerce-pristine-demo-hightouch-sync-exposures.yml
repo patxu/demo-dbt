@@ -81,3 +81,42 @@ exposures:
         sync_id: '551659'
         sync_slug: all-users-to-salesforce-marketing-cloud
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-iterable
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/558433
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/692438)**
+      to destination
+      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `USER_ID`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
+
+      * `FIRST_NAME` to `FIRST_NAME`
+
+      * `SIGN_UP_DATE` to `signupDate`
+
+      * `EMAIL` to `EMAIL`
+
+      * `USER_ID` to `userId`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '558433'
+        sync_slug: all-users-to-iterable
+        sync_name: All Users
