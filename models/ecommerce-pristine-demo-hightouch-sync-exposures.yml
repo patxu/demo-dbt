@@ -173,3 +173,28 @@ exposures:
         sync_id: '576771'
         sync_slug: all-users-to-salesforce
         sync_name: All Users
+  - name: Hightouch-Sync-trial-users-to-linkedin
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/588843
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/694760)**
+      to destination
+      **[Linkedin](https://app.hightouch.com/ecommerce-pristine-demo/destinations/63594)**
+      of type **linkedin**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `SHA256_EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '588843'
+        sync_slug: trial-users-to-linkedin
+        sync_name: Trial Users
