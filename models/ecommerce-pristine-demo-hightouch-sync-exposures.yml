@@ -55,3 +55,28 @@ exposures:
         sync_id: '636793'
         sync_slug: savings-application-dropoff-to-iterable
         sync_name: 'Savings: Application Dropoff'
+  - name: Hightouch-Sync-savings-application-dropoff-to-facebook-audiences
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/636837
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/697624)**
+      to destination **[Facebook
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '636837'
+        sync_slug: savings-application-dropoff-to-facebook-audiences
+        sync_name: 'Savings: Application Dropoff'
