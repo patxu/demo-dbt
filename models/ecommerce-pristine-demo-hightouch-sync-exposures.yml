@@ -138,3 +138,38 @@ exposures:
         sync_id: '649959'
         sync_slug: 55-to-salesforce-marketing-cloud
         sync_name: '>55'
+  - name: Hightouch-Sync-all-users-to-hubspot
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/650357
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/699066)**
+      to destination
+      **[Hubspot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `firstname`
+
+      * `LAST_NAME` to `lastname`
+
+      * `SIGN_UP_DATE` to `signup_date`
+
+      * `USER_ID` to `user_id`
+
+      * `USER_ID` to `user_id2`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '650357'
+        sync_slug: all-users-to-hubspot
+        sync_name: All Users
