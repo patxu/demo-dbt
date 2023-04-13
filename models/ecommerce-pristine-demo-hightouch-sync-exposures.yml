@@ -173,3 +173,53 @@ exposures:
         sync_id: '650357'
         sync_slug: all-users-to-hubspot
         sync_name: All Users
+  - name: Hightouch-Sync-segment-a-to-klaviyo-keb
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/660921
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/699892)**
+      to destination **[Klaviyo
+      (keb)](https://app.hightouch.com/ecommerce-pristine-demo/destinations/67594)**
+      of type **klaviyo**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '660921'
+        sync_slug: segment-a-to-klaviyo-keb
+        sync_name: Segment A
+  - name: Hightouch-Sync-segment-a-to-facebook-audiences
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/660934
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/699892)**
+      to destination **[Facebook
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '660934'
+        sync_slug: segment-a-to-facebook-audiences
+        sync_name: Segment A
