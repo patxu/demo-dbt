@@ -74,6 +74,8 @@ exposures:
 
       ### Columns used by this sync
 
+      * `EMAIL` to `email`
+
       * `LAST_NAME` to `last_name`
 
       * `FIRST_NAME` to `first_name`
