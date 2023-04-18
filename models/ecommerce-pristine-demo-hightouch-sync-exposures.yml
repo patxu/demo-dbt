@@ -122,3 +122,28 @@ exposures:
         sync_id: '713212'
         sync_slug: direct-deposit-users-to-iterable
         sync_name: Direct Deposit Users
+  - name: Hightouch-Sync-trial-drop-off-to-facebook-audiences
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/713842
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/703098)**
+      to destination **[Facebook
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58394)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '713842'
+        sync_slug: trial-drop-off-to-facebook-audiences
+        sync_name: Trial Drop Off
