@@ -3,35 +3,6 @@
 
 version: 2
 exposures:
-  - name: Hightouch-Sync-3-p-wealth-users-to-salesforce
-    type: application
-    owner:
-      email: john.lopus@hightouch.io
-      name: John Lopus
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/792089
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/707744)**
-      to destination
-      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Columns used by this sync
-
-      * `LAST_NAME` to `LastName`
-
-      * `FIRST_NAME` to `FirstName`
-
-      * `USER_ID` to `External_ID__c`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '792089'
-        sync_slug: 3-p-wealth-users-to-salesforce
-        sync_name: 3P Wealth Users
   - name: Hightouch-Sync-all-users-to-salesforce
     type: application
     owner:
@@ -85,28 +56,3 @@ exposures:
         sync_id: '792885'
         sync_slug: all-users-to-salesforce
         sync_name: All Users
-  - name: Hightouch-Sync-johns-model-to-salesforce
-    type: application
-    owner:
-      email: john.lopus@hightouch.io
-      name: John Lopus
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/804007
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/708617)**
-      to destination
-      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Columns used by this sync
-
-      * `USER_ID` to `External_ID__c`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '804007'
-        sync_slug: johns-model-to-salesforce
-        sync_name: johns model
