@@ -267,3 +267,34 @@ exposures:
         sync_id: '822294'
         sync_slug: all-users-to-salesforce-3
         sync_name: All Users
+  - name: Hightouch-Sync-matt-and-john-s-users-to-iterable
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/837436
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/711143)**
+      to destination
+      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `USER_ID`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '837436'
+        sync_slug: matt-and-john-s-users-to-iterable
+        sync_name: Matt and John's Users
