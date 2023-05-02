@@ -103,7 +103,39 @@ exposures:
       of type **googleDrive**
 
 
-      ### This sync uses all model columns
+      ### Columns used by this sync
+
+      * `ACTIVE_POC` to `ACTIVE_POC`
+
+      * `LEAD_GRADE` to `LEAD_GRADE`
+
+      * `LEAD_SCORE` to `LEAD_SCORE`
+
+      * `AD_CONVERSION` to `AD_CONVERSION`
+
+      * `FAVORITE_BRAND` to `FAVORITE_BRAND`
+
+      * `PAGEVIEWS` to `PAGEVIEWS`
+
+      * `NUM_BLOG_POSTS_VIEWED` to `NUM_BLOG_POSTS_VIEWED`
+
+      * `SIGN_UP_DATE` to `SIGN_UP_DATE`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `TRIAL_USER` to `TRIAL_USER`
+
+      * `DASHBOARD_VIEWS` to `DASHBOARD_VIEWS`
+
+      * `EMAIL` to `EMAIL`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `FIRST_NAME` to `FIRST_NAME`
+
+      * `USER_ID` to `USER_ID`
     tags: []
     meta:
       hightouch:
