@@ -183,3 +183,32 @@ exposures:
         sync_id: '837559'
         sync_slug: all-users-to-facebook-audiences
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-salesforce-marketing-cloud
+    type: application
+    owner:
+      email: ju@hightouch.io
+      name: Ju Lee
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/841215
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/707821)**
+      to destination **[Salesforce Marketing
+      Cloud](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56360)**
+      of type **sfmc**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `last_name`
+
+      * `VIP_CUSTOMER` to `vip`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '841215'
+        sync_slug: all-users-to-salesforce-marketing-cloud
+        sync_name: All Users
