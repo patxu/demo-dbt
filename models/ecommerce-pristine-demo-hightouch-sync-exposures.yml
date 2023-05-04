@@ -86,4 +86,4 @@ exposures:
       hightouch:
         sync_id: '849050'
         sync_slug: all-users-to-salesforce
-        sync_name: All Userss
+        sync_name: All Users
