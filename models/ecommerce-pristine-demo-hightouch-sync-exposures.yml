@@ -44,38 +44,3 @@ exposures:
         sync_id: '906222'
         sync_slug: trial-drop-off-to-iterable
         sync_name: Deprecated Premium Subscription
-  - name: Hightouch-Sync-vir-s-model-to-hubspot
-    type: application
-    owner:
-      email: vir@hightouch.io
-      name: Vir Sodhi
-    depends_on:
-      - ref('all_events')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/932357
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_events](https://app.hightouch.com/ecommerce-pristine-demo/models/718365)**
-      to destination
-      **[Hubspot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
-      of type **hubspot**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `email`
-
-      * `FIRST_NAME` to `firstname`
-
-      * `GENDER` to `gender`
-
-      * `LAST_NAME` to `lastname`
-
-      * `USER_ID` to `user_id2`
-
-      * `USER_ID` to `user_id`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '932357'
-        sync_slug: vir-s-model-to-hubspot
-        sync_name: Vir's model
