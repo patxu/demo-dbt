@@ -109,3 +109,94 @@ exposures:
         sync_id: '976133'
         sync_slug: all-users-to-salesforce-3
         sync_name: All Users
+  - name: Hightouch-Sync-all-g-users-to-iterable-cqsi0
+    type: application
+    owner:
+      email: ''
+      name: ''
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/977269
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/720989)**
+      to destination
+      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `USER_ID`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
+
+      * `FIRST_NAME` to `FIRST_NAME`
+
+      * `SIGN_UP_DATE` to `signupDate`
+
+      * `EMAIL` to `EMAIL`
+
+      * `USER_ID` to `userId`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '977269'
+        sync_slug: all-g-users-to-iterable-cqsi0
+        sync_name: Free Customers Devices >3
+  - name: Hightouch-Sync-all-g-users-to-google-ads-fmg42
+    type: application
+    owner:
+      email: ''
+      name: ''
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/977270
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/720989)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '977270'
+        sync_slug: all-g-users-to-google-ads-fmg42
+        sync_name: Free Customers Devices >3
+  - name: Hightouch-Sync-all-g-users-to-facebook-custom-audiences-78e4l
+    type: application
+    owner:
+      email: ''
+      name: ''
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/977271
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/720989)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '977271'
+        sync_slug: all-g-users-to-facebook-custom-audiences-78e4l
+        sync_name: Free Customers Devices >3
