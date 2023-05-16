@@ -28,3 +28,40 @@ exposures:
         sync_id: '964791'
         sync_slug: cyclist-subscribers-to-iterable
         sync_name: Cyclist Subscribers
+  - name: Hightouch-Sync-all-users-to-hubspot
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/973142
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/720625)**
+      to destination
+      **[Hubspot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `email`
+
+      * `FIRST_NAME` to `firstname`
+
+      * `GENDER` to `gender`
+
+      * `LAST_NAME` to `lastname`
+
+      * `USER_ID` to `user_id`
+
+      * `USER_ID` to `user_id2`
+
+      * `USER_ID` to `hightouch_user_id`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '973142'
+        sync_slug: all-users-to-hubspot
+        sync_name: All users
