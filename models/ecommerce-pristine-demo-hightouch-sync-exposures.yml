@@ -2,29 +2,4 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures:
-  - name: Hightouch-Sync-users-audience-to-the-trade-desk
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1042448
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/727250)**
-      to destination **[The Trade
-      Desk](https://app.hightouch.com/ecommerce-pristine-demo/destinations/67755)**
-      of type **tradedesk**
-
-
-      ### Columns used by this sync
-
-      * `USER_ID` to `UID2`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1042448'
-        sync_slug: users-audience-to-the-trade-desk
-        sync_name: Users Audience
+exposures: []
