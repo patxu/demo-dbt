@@ -28,3 +28,110 @@ exposures:
         sync_id: '1078350'
         sync_slug: all-users-to-facebook-custom-audiences
         sync_name: All Users
+  - name: Hightouch-Sync-marketing-activation-users-to-facebook-custom-audiences
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136910
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `CT`
+
+      * `[object Object]` to `COUNTRY`
+
+      * `[object Object]` to `EMAIL`
+
+      * `[object Object]` to `FN`
+
+      * `[object Object]` to `LN`
+
+      * `[object Object]` to `MADID`
+
+      * `[object Object]` to `PHONE`
+
+      * `[object Object]` to `ST`
+
+      * `[object Object]` to `ZIP`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1136910'
+        sync_slug: marketing-activation-users-to-facebook-custom-audiences
+        sync_name: Marketing Activation Users
+  - name: Hightouch-Sync-marketing-activation-users-to-google-ads
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136911
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `hashedEmail`
+
+      * `[object Object]` to `hashedPhoneNumber`
+
+      * `[object Object]` to `addressInfo.hashedFirstName`
+
+      * `[object Object]` to `addressInfo.hashedLastName`
+
+      * `[object Object]` to `addressInfo.countryCode`
+
+      * `[object Object]` to `addressInfo.postalCode`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1136911'
+        sync_slug: marketing-activation-users-to-google-ads
+        sync_name: Marketing Activation Users
+  - name: Hightouch-Sync-marketing-activation-users-to-braze
+    type: application
+    owner:
+      email: henry@hightouch.io
+      name: Henry Bottger
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136924
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
+      to destination
+      **[Braze](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56096)**
+      of type **braze**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `email`
+
+      * `FIRST_NAME` to `first_name`
+
+      * `LAST_NAME` to `last_name`
+
+      * `USER_ID` to `external_id`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1136924'
+        sync_slug: marketing-activation-users-to-braze
+        sync_name: Marketing Activation Users
