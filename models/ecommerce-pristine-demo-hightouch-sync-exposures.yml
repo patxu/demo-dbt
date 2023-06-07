@@ -180,8 +180,6 @@ exposures:
 
       * `BRAND_AFFINITY` to `Brand_Affinity__c`
 
-      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
-
       * `EMAIL` to `Email`
     tags: []
     meta:
