@@ -152,3 +152,40 @@ exposures:
         sync_id: '1195418'
         sync_slug: high-value-contacts-to-marketo
         sync_name: High Value Contacts
+  - name: Hightouch-Sync-all-users-to-salesforce
+    type: application
+    owner:
+      email: anjie@hightouch.io
+      name: Anjie Wang
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1196884
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/737155)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `LastName`
+
+      * `FIRST_NAME` to `FirstName`
+
+      * `VIP_CUSTOMER` to `VIP_Customer__c`
+
+      * `LIFETIME_VALUE` to `Lifetime_Value__c`
+
+      * `BRAND_AFFINITY` to `Brand_Affinity__c`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
+
+      * `EMAIL` to `Email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1196884'
+        sync_slug: all-users-to-salesforce
+        sync_name: All Users
