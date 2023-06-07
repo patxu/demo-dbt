@@ -3,268 +3,28 @@
 
 version: 2
 exposures:
-  - name: Hightouch-Sync-all-users-to-facebook-custom-audiences
+  - name: Hightouch-Sync-marketing-activation-users-to-marketo
     type: application
     owner:
       email: andrewjesien@hightouch.io
       name: Andrew Jesien
     depends_on:
       - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1078350
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/716256)**
-      to destination **[Facebook Custom
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `CT`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1078350'
-        sync_slug: all-users-to-facebook-custom-audiences
-        sync_name: All Users
-  - name: Hightouch-Sync-marketing-activation-users-to-facebook-custom-audiences
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136910
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
-      to destination **[Facebook Custom
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `[object Object]` to `CT`
-
-      * `[object Object]` to `COUNTRY`
-
-      * `[object Object]` to `EMAIL`
-
-      * `[object Object]` to `FN`
-
-      * `[object Object]` to `LN`
-
-      * `[object Object]` to `MADID`
-
-      * `[object Object]` to `PHONE`
-
-      * `[object Object]` to `ST`
-
-      * `[object Object]` to `ZIP`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1136910'
-        sync_slug: marketing-activation-users-to-facebook-custom-audiences
-        sync_name: Marketing Activation Users
-  - name: Hightouch-Sync-marketing-activation-users-to-google-ads
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136911
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
-      to destination **[Google
-      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
-      of type **google**
-
-
-      ### Columns used by this sync
-
-      * `[object Object]` to `hashedEmail`
-
-      * `[object Object]` to `hashedPhoneNumber`
-
-      * `[object Object]` to `addressInfo.hashedFirstName`
-
-      * `[object Object]` to `addressInfo.hashedLastName`
-
-      * `[object Object]` to `addressInfo.countryCode`
-
-      * `[object Object]` to `addressInfo.postalCode`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1136911'
-        sync_slug: marketing-activation-users-to-google-ads
-        sync_name: Marketing Activation Users
-  - name: Hightouch-Sync-marketing-activation-users-to-braze
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1136924
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1190487
     description: >-
       Hightouch Sync from dbt model
       **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733102)**
       to destination
-      **[Braze](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56096)**
-      of type **braze**
+      **[Marketo](https://app.hightouch.com/ecommerce-pristine-demo/destinations/66187)**
+      of type **marketo**
 
 
       ### Columns used by this sync
 
       * `EMAIL` to `email`
-
-      * `FIRST_NAME` to `first_name`
-
-      * `LAST_NAME` to `last_name`
-
-      * `USER_ID` to `external_id`
     tags: []
     meta:
       hightouch:
-        sync_id: '1136924'
-        sync_slug: marketing-activation-users-to-braze
+        sync_id: '1190487'
+        sync_slug: marketing-activation-users-to-marketo
         sync_name: Marketing Activation Users
-  - name: Hightouch-Sync-all-users-to-salesforce
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1142024
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733865)**
-      to destination
-      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Columns used by this sync
-
-      * `FIRST_NAME` to `FirstName`
-
-      * `LAST_NAME` to `LastName`
-
-      * `VIP_CUSTOMER` to `VIP_Customer__c`
-
-      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
-
-      * `DASHBOARD_VIEWS` to `Dashboard_Views__c`
-
-      * `PAGEVIEWS` to `Pageviews__c`
-
-      * `TRIAL_USER` to `Trial_User__c`
-
-      * `SIGN_UP_DATE` to `Sign_Up_Date__c`
-
-      * `NUM_BLOG_POSTS_VIEWED` to `Num_Blog_Posts_Viewed__c`
-
-      * `FAVORITE_BRAND` to `Favorite_Brand__c`
-
-      * `AD_CONVERSION` to `Ad_Conversion__c`
-
-      * `LEAD_SCORE` to `Lead_Score__c`
-
-      * `LEAD_GRADE` to `Lead_Grade__c`
-
-      * `ACTIVE_POC` to `Active_POC__c`
-
-      * `EMAIL` to `Email`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1142024'
-        sync_slug: all-users-to-salesforce
-        sync_name: All Users
-  - name: Hightouch-Sync-cw-users-to-salesforce-marketing-cloud
-    type: application
-    owner:
-      email: john.lopus@hightouch.io
-      name: John Lopus
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1153701
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/734488)**
-      to destination **[Salesforce Marketing
-      Cloud](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56360)**
-      of type **sfmc**
-
-
-      ### Columns used by this sync
-
-      * `USER_ID` to `user_id`
-
-      * `EMAIL` to `email`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1153701'
-        sync_slug: cw-users-to-salesforce-marketing-cloud
-        sync_name: CW Users
-  - name: Hightouch-Sync-all-users-to-salesforce-2
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1175717
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/733865)**
-      to destination
-      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
-      of type **salesforce**
-
-
-      ### Columns used by this sync
-
-      * `FIRST_NAME` to `FirstName`
-
-      * `LAST_NAME` to `LastName`
-
-      * `VIP_CUSTOMER` to `VIP_Customer__c`
-
-      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
-
-      * `DASHBOARD_VIEWS` to `Dashboard_Views__c`
-
-      * `PAGEVIEWS` to `Pageviews__c`
-
-      * `TRIAL_USER` to `Trial_User__c`
-
-      * `SIGN_UP_DATE` to `Sign_Up_Date__c`
-
-      * `NUM_BLOG_POSTS_VIEWED` to `Num_Blog_Posts_Viewed__c`
-
-      * `FAVORITE_BRAND` to `Favorite_Brand__c`
-
-      * `AD_CONVERSION` to `Ad_Conversion__c`
-
-      * `LEAD_SCORE` to `Lead_Score__c`
-
-      * `LEAD_GRADE` to `Lead_Grade__c`
-
-      * `ACTIVE_POC` to `Active_POC__c`
-
-      * `EMAIL` to `Email`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1175717'
-        sync_slug: all-users-to-salesforce-2
-        sync_name: All Users
