@@ -123,3 +123,32 @@ exposures:
         sync_id: '1195262'
         sync_slug: all-users-to-hubspot-3
         sync_name: All Users
+  - name: Hightouch-Sync-high-value-contacts-to-marketo
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1195418
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/737039)**
+      to destination
+      **[Marketo](https://app.hightouch.com/ecommerce-pristine-demo/destinations/66187)**
+      of type **marketo**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `firstName`
+
+      * `LEAD_SCORE` to `leadScore`
+
+      * `USER_ID` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1195418'
+        sync_slug: high-value-contacts-to-marketo
+        sync_name: High Value Contacts
