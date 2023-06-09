@@ -32,3 +32,36 @@ exposures:
         sync_id: '1195418'
         sync_slug: high-value-contacts-to-marketo
         sync_name: High Value Contacts
+  - name: Hightouch-Sync-virgin-users-to-salesforce
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1213074
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/738331)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `LastName`
+
+      * `FIRST_NAME` to `FirstName`
+
+      * `EMAIL` to `Email`
+
+      * `VIP_CUSTOMER` to `VIP_Customer__c`
+
+      * `USER_ID` to `External_ID__c`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1213074'
+        sync_slug: virgin-users-to-salesforce
+        sync_name: Virgin Users
