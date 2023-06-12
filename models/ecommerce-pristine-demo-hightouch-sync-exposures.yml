@@ -2,35 +2,4 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures:
-  - name: Hightouch-Sync-south-state-users-to-salesforce-financial-services
-    type: application
-    owner:
-      email: john.lopus@hightouch.io
-      name: John Lopus
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1213875
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/738431)**
-      to destination **[Salesforce (Financial
-      Services)](https://app.hightouch.com/ecommerce-pristine-demo/destinations/68974)**
-      of type **salesforce**
-
-
-      ### Columns used by this sync
-
-      * `LAST_NAME` to `LastName`
-
-      * `FIRST_NAME` to `FirstName`
-
-      * `EMAIL` to `Email`
-
-      * `USER_ID` to `FinServ__SourceSystemId__c`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1213875'
-        sync_slug: south-state-users-to-salesforce-financial-services
-        sync_name: south state users
+exposures: []
