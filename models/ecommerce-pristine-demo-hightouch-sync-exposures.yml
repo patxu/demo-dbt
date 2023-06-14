@@ -34,3 +34,104 @@ exposures:
         sync_id: '1264188'
         sync_slug: trial-signups-last-300-days-to-marketo-2
         sync_name: Trial Signups last 300 Days
+  - name: Hightouch-Sync-users-saa-s-to-facebook-custom-audiences-hru6v
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1264655
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/748802)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `CT`
+
+      * `[object Object]` to `COUNTRY`
+
+      * `[object Object]` to `EMAIL`
+
+      * `[object Object]` to `FN`
+
+      * `[object Object]` to `LN`
+
+      * `[object Object]` to `MADID`
+
+      * `[object Object]` to `PHONE`
+
+      * `[object Object]` to `ST`
+
+      * `[object Object]` to `ZIP`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1264655'
+        sync_slug: users-saa-s-to-facebook-custom-audiences-hru6v
+        sync_name: signed up for trial
+  - name: Hightouch-Sync-users-saa-s-to-marketo-tst1w
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1264656
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/748802)**
+      to destination
+      **[Marketo](https://app.hightouch.com/ecommerce-pristine-demo/destinations/66187)**
+      of type **marketo**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `id`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1264656'
+        sync_slug: users-saa-s-to-marketo-tst1w
+        sync_name: signed up for trial
+  - name: Hightouch-Sync-users-saa-s-to-google-ads-w845w
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1264657
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/748802)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `hashedEmail`
+
+      * `[object Object]` to `hashedPhoneNumber`
+
+      * `[object Object]` to `addressInfo.hashedFirstName`
+
+      * `[object Object]` to `addressInfo.hashedLastName`
+
+      * `[object Object]` to `addressInfo.countryCode`
+
+      * `[object Object]` to `addressInfo.postalCode`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1264657'
+        sync_slug: users-saa-s-to-google-ads-w845w
+        sync_name: signed up for trial
