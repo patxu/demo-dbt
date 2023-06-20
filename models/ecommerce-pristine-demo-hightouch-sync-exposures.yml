@@ -2,43 +2,4 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures:
-  - name: Hightouch-Sync-braze-events-to-braze
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_events')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1306918
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_events](https://app.hightouch.com/ecommerce-pristine-demo/models/755186)**
-      to destination
-      **[Braze](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56096)**
-      of type **braze**
-
-
-      ### Columns used by this sync
-
-      * `URL` to `URL`
-
-      * `BRAND` to `BRAND`
-
-      * `PRICE` to `PRICE`
-
-      * `TIMESTAMP` to `TIMESTAMP`
-
-      * `NAME` to `NAME`
-
-      * `CATEGORY` to `CATEGORY`
-
-      * `SKU` to `SKU`
-
-      * `USER_ID` to `external_id`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1306918'
-        sync_slug: braze-events-to-braze
-        sync_name: braze events
+exposures: []
