@@ -2,4 +2,29 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-john-demo-to-facebook-custom-audiences
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1334370
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/759861)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1334370'
+        sync_slug: john-demo-to-facebook-custom-audiences
+        sync_name: John Demo
