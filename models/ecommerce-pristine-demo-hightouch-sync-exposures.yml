@@ -2,4 +2,80 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-users-saa-s-to-facebook-custom-audiences-nw116
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1542416
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/823667)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `CT`
+
+      * `[object Object]` to `COUNTRY`
+
+      * `[object Object]` to `EMAIL`
+
+      * `[object Object]` to `FN`
+
+      * `[object Object]` to `LN`
+
+      * `[object Object]` to `MADID`
+
+      * `[object Object]` to `PHONE`
+
+      * `[object Object]` to `ST`
+
+      * `[object Object]` to `ZIP`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1542416'
+        sync_slug: users-saa-s-to-facebook-custom-audiences-nw116
+        sync_name: Demo Request
+  - name: Hightouch-Sync-users-saa-s-to-google-ads-wc7hu
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1542417
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/823667)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `[object Object]` to `hashedEmail`
+
+      * `[object Object]` to `hashedPhoneNumber`
+
+      * `[object Object]` to `addressInfo.hashedFirstName`
+
+      * `[object Object]` to `addressInfo.hashedLastName`
+
+      * `[object Object]` to `addressInfo.countryCode`
+
+      * `[object Object]` to `addressInfo.postalCode`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1542417'
+        sync_slug: users-saa-s-to-google-ads-wc7hu
+        sync_name: Demo Request
