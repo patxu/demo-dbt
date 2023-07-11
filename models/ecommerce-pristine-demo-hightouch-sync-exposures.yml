@@ -91,3 +91,26 @@ exposures:
         sync_id: '1543874'
         sync_slug: all-users-to-hubspot
         sync_name: All Users
+  - name: Hightouch-Sync-all-users-to-google-sheets
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1544105
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/824039)**
+      to destination **[Google
+      Sheets](https://app.hightouch.com/ecommerce-pristine-demo/destinations/60480)**
+      of type **googleSheetsSA**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1544105'
+        sync_slug: all-users-to-google-sheets
+        sync_name: All users
