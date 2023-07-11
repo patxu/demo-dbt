@@ -35,7 +35,7 @@ with source_data as (
 
 
 
-select * from PRISTINE_ECOMMERCE.public.mulitplied_users;
+select * from PRISTINE_ECOMMERCE.PUBLIC.mulitplied_users
 
 
 /*
