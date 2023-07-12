@@ -68,7 +68,7 @@ exposures:
       Hightouch Sync from dbt model
       **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/824688)**
       to destination
-      **[Hubspot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
+      **[HubSpot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
       of type **hubspot**
 
 
