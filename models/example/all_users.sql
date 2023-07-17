@@ -17,7 +17,6 @@ with source_data as (
 
 
 SELECT ROW_NUMBER() OVER (ORDER BY RANDOM(1)) AS PRIMARY_KEY,
-       CAST(ROW_NUMBER() OVER (ORDER BY RANDOM(1)) AS varchar) AS PRIMARY_KEY_STR,
        ROW_NUMBER() OVER (ORDER BY RANDOM(1)) || '-' || EMAIL AS EMAIL,
 t.user_id,
 t.first_name,
