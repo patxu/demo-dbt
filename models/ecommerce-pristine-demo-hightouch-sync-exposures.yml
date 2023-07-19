@@ -53,31 +53,6 @@ exposures:
         sync_id: '1565262'
         sync_slug: johns-test-users-to-google-ads
         sync_name: Johns Test Users
-  - name: Hightouch-Sync-test-audience-to-facebook-custom-audiences
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1565328
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/837254)**
-      to destination **[Facebook Custom
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `EMAIL`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1565328'
-        sync_slug: test-audience-to-facebook-custom-audiences
-        sync_name: Test Audience
   - name: Hightouch-Sync-johns-test-model-ga-to-salesforce
     type: application
     owner:
