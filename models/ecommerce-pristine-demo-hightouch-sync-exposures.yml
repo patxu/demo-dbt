@@ -156,3 +156,30 @@ exposures:
         sync_id: '1566456'
         sync_slug: test-users-to-salesforce
         sync_name: 'Test Users '
+  - name: Hightouch-Sync-johns-model-to-google-ads
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1570895
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/842429)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+
+      * `FIRST_NAME` to `addressInfo.hashedFirstName`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1570895'
+        sync_slug: johns-model-to-google-ads
+        sync_name: Johns Model
