@@ -3,31 +3,6 @@
 
 version: 2
 exposures:
-  - name: Hightouch-Sync-trial-users-to-iterable
-    type: application
-    owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1552683
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/829680)**
-      to destination
-      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
-      of type **iterable**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `email`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1552683'
-        sync_slug: trial-users-to-iterable
-        sync_name: Trial Users
   - name: Hightouch-Sync-offline-conversions-to-iterable
     type: application
     owner:
