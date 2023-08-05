@@ -2,4 +2,106 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-all-users-to-salesforce
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1653337
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/877168)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `ACTIVE_POC` to `Active_POC__c`
+
+      * `AD_CONVERSION` to `Ad_Conversion__c`
+
+      * `DASHBOARD_VIEWS` to `Dashboard_Views__c`
+
+      * `EMAIL` to `Email`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
+
+      * `FAVORITE_BRAND` to `Favorite_Brand__c`
+
+      * `FIRST_NAME` to `FirstName`
+
+      * `LAST_NAME` to `LastName`
+
+      * `LEAD_GRADE` to `Lead_Grade__c`
+
+      * `LEAD_SCORE` to `Lead_Score__c`
+
+      * `NUM_BLOG_POSTS_VIEWED` to `Num_Blog_Posts_Viewed__c`
+
+      * `PAGEVIEWS` to `Pageviews__c`
+
+      * `SIGN_UP_DATE` to `Sign_Up_Date__c`
+
+      * `TRIAL_USER` to `Trial_User__c`
+
+      * `VIP_CUSTOMER` to `VIP_Customer__c`
+
+      * `PRIMARY_KEY` to `External_ID__c`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1653337'
+        sync_slug: all-users-to-salesforce
+        sync_name: All Users
+  - name: Hightouch-Sync-all-events-to-iterable
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_events')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1653343
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_events](https://app.hightouch.com/ecommerce-pristine-demo/models/877169)**
+      to destination
+      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `userId`
+
+      * `URL` to `URL`
+
+      * `BRAND` to `BRAND`
+
+      * `PRICE` to `PRICE`
+
+      * `TIMESTAMP` to `TIMESTAMP`
+
+      * `NAME` to `NAME`
+
+      * `CATEGORY` to `CATEGORY`
+
+      * `SKU` to `SKU`
+
+      * `PRODUCT_ID` to `PRODUCT_ID`
+
+      * `EVENT_NAME` to `EVENT_NAME`
+
+      * `USER_ID` to `USER_ID`
+
+      * `MESSAGE_ID` to `MESSAGE_ID`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1653343'
+        sync_slug: all-events-to-iterable
+        sync_name: All Events
