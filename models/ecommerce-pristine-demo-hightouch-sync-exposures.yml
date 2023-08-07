@@ -248,32 +248,3 @@ exposures:
         sync_id: '1662932'
         sync_slug: abandoned-cart-re-engagement-campaign-to-sync-logs-only
         sync_name: Abandoned Cart Re-engagement Campaign
-  - name: Hightouch-Sync-propensity-60-and-p9-m-purchasers-to-google-ads
-    type: application
-    owner:
-      email: jordan.pappas@hightouch.io
-      name: Jordan Pappas
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1662994
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880399)**
-      to destination **[Google
-      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
-      of type **google**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `hashedEmail`
-
-      * `FIRST_NAME` to `addressInfo.hashedFirstName`
-
-      * `LAST_NAME` to `addressInfo.hashedLastName`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1662994'
-        sync_slug: propensity-60-and-p9-m-purchasers-to-google-ads
-        sync_name: High Propensity and P9M Purchasers
