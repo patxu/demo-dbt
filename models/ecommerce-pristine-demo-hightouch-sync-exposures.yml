@@ -105,35 +105,6 @@ exposures:
         sync_id: '1653343'
         sync_slug: all-events-to-iterable
         sync_name: All Events
-  - name: Hightouch-Sync-users-to-facebook-custom-audiences-smhro
-    type: application
-    owner:
-      email: henry@hightouch.io
-      name: Henry Bottger
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1660172
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/879423)**
-      to destination **[Facebook Custom
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `[object Object]` to `EMAIL`
-
-      * `[object Object]` to `MADID`
-
-      * `[object Object]` to `PHONE`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1660172'
-        sync_slug: users-to-facebook-custom-audiences-smhro
-        sync_name: Test Audience
   - name: Hightouch-Sync-users-to-tik-tok-ads-h0144
     type: application
     owner:
