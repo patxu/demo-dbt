@@ -283,3 +283,59 @@ exposures:
         sync_id: '1660175'
         sync_slug: users-to-snapchat-x878u
         sync_name: Test Audience
+  - name: Hightouch-Sync-abandoned-cart-re-engagement-campaign-to-hub-spot
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1662931
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880391)**
+      to destination
+      **[HubSpot](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59414)**
+      of type **hubspot**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `firstname`
+
+      * `LAST_NAME` to `lastname`
+
+      * `SIGN_UP_DATE` to `signup_date`
+
+      * `USER_ID` to `user_id`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1662931'
+        sync_slug: abandoned-cart-re-engagement-campaign-to-hub-spot
+        sync_name: Abandoned Cart Re-engagement Campaign
+  - name: Hightouch-Sync-abandoned-cart-re-engagement-campaign-to-sync-logs-only
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1662932
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880391)**
+      to destination **[Sync Logs
+      Only](https://app.hightouch.com/ecommerce-pristine-demo/destinations/68657)**
+      of type **sync-logs**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1662932'
+        sync_slug: abandoned-cart-re-engagement-campaign-to-sync-logs-only
+        sync_name: Abandoned Cart Re-engagement Campaign
