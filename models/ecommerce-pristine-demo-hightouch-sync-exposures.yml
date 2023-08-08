@@ -220,3 +220,32 @@ exposures:
         sync_id: '1663090'
         sync_slug: high-propensity-and-p9-m-purchasers-to-facebook-custom-audiences
         sync_name: High Propensity and P9M Purchasers
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-n2v5y
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1666936
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880904)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1666936'
+        sync_slug: users-to-facebook-custom-audiences-n2v5y
+        sync_name: High Propensity and P9M Purchasers
