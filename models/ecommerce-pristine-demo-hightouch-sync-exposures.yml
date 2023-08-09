@@ -165,8 +165,6 @@ exposures:
 
       ### Columns used by this sync
 
-      * `FAVORITE_BRAND` to `company`
-
       * `EMAIL` to `email`
     tags: []
     meta:
