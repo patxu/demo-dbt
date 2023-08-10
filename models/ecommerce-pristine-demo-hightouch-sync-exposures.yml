@@ -225,3 +225,30 @@ exposures:
         sync_id: '1674713'
         sync_slug: all-users-to-salesforce
         sync_name: All Users
+  - name: Hightouch-Sync-audience-sfmc-to-salesforce-marketing-cloud
+    type: application
+    owner:
+      email: andrewjesien@hightouch.io
+      name: Andrew Jesien
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1676158
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/885159)**
+      to destination **[Salesforce Marketing
+      Cloud](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56360)**
+      of type **sfmc**
+
+
+      ### Columns used by this sync
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1676158'
+        sync_slug: audience-sfmc-to-salesforce-marketing-cloud
+        sync_name: Audience SFMC
