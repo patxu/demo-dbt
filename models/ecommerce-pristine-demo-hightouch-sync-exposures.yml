@@ -475,3 +475,36 @@ exposures:
         sync_id: '1697244'
         sync_slug: users-to-google-ads-1otg2
         sync_name: Abandoned Cart Re-engagement Campaign
+  - name: Hightouch-Sync-purchase-abandoners-to-salesforce
+    type: application
+    owner:
+      email: anjie@hightouch.io
+      name: Anjie Wang
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1701327
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/894480)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `LastName`
+
+      * `FIRST_NAME` to `FirstName`
+
+      * `EMAIL` to `Email`
+
+      * `VIP_CUSTOMER` to `VIP_Customer__c`
+
+      * `PRIMARY_KEY` to `External_ID__c`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1701327'
+        sync_slug: purchase-abandoners-to-salesforce
+        sync_name: Purchase Abandoners
