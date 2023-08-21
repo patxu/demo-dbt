@@ -741,3 +741,34 @@ exposures:
         sync_id: '1716708'
         sync_slug: events-to-facebook-capi
         sync_name: 'Events '
+  - name: Hightouch-Sync-johns-users-test-to-my-sql
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1717205
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/903252)**
+      to destination
+      **[MySQL](https://app.hightouch.com/ecommerce-pristine-demo/destinations/73202)**
+      of type **mysql-destination**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `first_name`
+
+      * `LAST_NAME` to `last_name`
+
+      * `EMAIL` to `email`
+
+      * `USER_ID` to `user_id`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1717205'
+        sync_slug: johns-users-test-to-my-sql
+        sync_name: Johns Users - test
