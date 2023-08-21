@@ -694,3 +694,50 @@ exposures:
         sync_id: '1716657'
         sync_slug: all-events-to-facebook-capi
         sync_name: All Events
+  - name: Hightouch-Sync-events-to-facebook-capi
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_events')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1716708
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_events](https://app.hightouch.com/ecommerce-pristine-demo/models/902983)**
+      to destination **[Facebook
+      CAPI](https://app.hightouch.com/ecommerce-pristine-demo/destinations/62019)**
+      of type **facebookConversions**
+
+
+      ### Columns used by this sync
+
+      * `USER_ID` to `user_data.anon_id`
+
+      * `BRAND` to `BRAND`
+
+      * `URL` to `URL`
+
+      * `PRICE` to `PRICE`
+
+      * `TIMESTAMP` to `TIMESTAMP`
+
+      * `NAME` to `NAME`
+
+      * `CATEGORY` to `CATEGORY`
+
+      * `SKU` to `SKU`
+
+      * `PRODUCT_ID` to `PRODUCT_ID`
+
+      * `EVENT_NAME` to `EVENT_NAME`
+
+      * `USER_ID` to `USER_ID`
+
+      * `MESSAGE_ID` to `MESSAGE_ID`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1716708'
+        sync_slug: events-to-facebook-capi
+        sync_name: 'Events '
