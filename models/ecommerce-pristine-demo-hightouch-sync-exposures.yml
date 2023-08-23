@@ -346,3 +346,28 @@ exposures:
         sync_id: '1725722'
         sync_slug: users-to-facebook-custom-audiences-vadq1
         sync_name: Abandoned Cart Re-engagement Campaign
+  - name: Hightouch-Sync-completed-an-order-last-90-days-to-google-ads
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1725784
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/914494)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1725784'
+        sync_slug: completed-an-order-last-90-days-to-google-ads
+        sync_name: Completed an Order - Last 90 days
