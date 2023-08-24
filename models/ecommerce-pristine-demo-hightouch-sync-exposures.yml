@@ -87,7 +87,7 @@ exposures:
       hightouch:
         sync_id: '1663080'
         sync_slug: high-propensity-and-p9-m-purchasers-to-google-ads
-        sync_name: High Propensity and P9M Purchasers
+        sync_name: High Propensity + Previous 9M Purchasers
   - name: >-
       Hightouch-Sync-high-propensity-and-p9-m-purchasers-to-facebook-custom-audiences
     type: application
@@ -117,7 +117,7 @@ exposures:
       hightouch:
         sync_id: '1663090'
         sync_slug: high-propensity-and-p9-m-purchasers-to-facebook-custom-audiences
-        sync_name: High Propensity and P9M Purchasers
+        sync_name: High Propensity + Previous 9M Purchasers
   - name: Hightouch-Sync-users-to-facebook-custom-audiences-n2v5y
     type: application
     owner:
@@ -146,7 +146,7 @@ exposures:
       hightouch:
         sync_id: '1666936'
         sync_slug: users-to-facebook-custom-audiences-n2v5y
-        sync_name: High Propensity and P9M Purchasers
+        sync_name: High Propensity + Previous 9M Purchasers
   - name: Hightouch-Sync-all-users-to-salesforce-2
     type: application
     owner:
