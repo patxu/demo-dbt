@@ -667,3 +667,32 @@ exposures:
         sync_id: '1749672'
         sync_slug: josh-test-audience-to-salesforce-marketing-cloud
         sync_name: Josh Test Audience
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-y1hi8
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1758279
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/956588)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1758279'
+        sync_slug: users-to-facebook-custom-audiences-y1hi8
+        sync_name: Users
