@@ -611,32 +611,3 @@ exposures:
         sync_id: '1748514'
         sync_slug: users-to-google-ads-vp6gh
         sync_name: High Propensity + Previous 9M Purchasers
-  - name: Hightouch-Sync-users-to-facebook-custom-audiences-hfkzo
-    type: application
-    owner:
-      email: john.lopus@hightouch.io
-      name: John Lopus
-    depends_on:
-      - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1758539
-    description: >-
-      Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/957049)**
-      to destination **[Facebook Custom
-      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
-      of type **facebook**
-
-
-      ### Columns used by this sync
-
-      * `EMAIL` to `EMAIL`
-
-      * `FIRST_NAME` to `FN`
-
-      * `LAST_NAME` to `LN`
-    tags: []
-    meta:
-      hightouch:
-        sync_id: '1758539'
-        sync_slug: users-to-facebook-custom-audiences-hfkzo
-        sync_name: Jordans Pets
