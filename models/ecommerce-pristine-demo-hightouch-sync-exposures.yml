@@ -629,10 +629,6 @@ exposures:
 
       ### Columns used by this sync
 
-      * `ACTIVE_POC` to `ACTIVE_POC`
-
-      * `LEAD_GRADE` to `LEAD_GRADE`
-
       * `FIRST_NAME` to `EMAIL`
 
       * `EMAIL` to `email`
