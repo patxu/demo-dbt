@@ -629,7 +629,7 @@ exposures:
 
       ### Columns used by this sync
 
-      * `FIRST_NAME` to `EMAIL`
+      * `FIRST_NAME` to `FIRST_NAME`
 
       * `EMAIL` to `email`
     tags: []
