@@ -615,3 +615,28 @@ exposures:
         sync_id: '1787104'
         sync_slug: all-events-to-facebook-capi
         sync_name: All Events
+  - name: Hightouch-Sync-vip-customers-to-sendgrid
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1787318
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1006871)**
+      to destination
+      **[Sendgrid](https://app.hightouch.com/ecommerce-pristine-demo/destinations/58787)**
+      of type **sendgrid**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1787318'
+        sync_slug: vip-customers-to-sendgrid
+        sync_name: VIP customers
