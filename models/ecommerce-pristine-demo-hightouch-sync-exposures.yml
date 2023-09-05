@@ -568,3 +568,32 @@ exposures:
         sync_id: '1786634'
         sync_slug: high-propensity-previous-9-m-purchasers-to-snowflake
         sync_name: High Propensity + Previous 9M Purchasers
+  - name: Hightouch-Sync-all-events-to-google-ads
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_events')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1787095
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_events](https://app.hightouch.com/ecommerce-pristine-demo/models/877169)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `TIMESTAMP` to `conversionDateTime`
+
+      * `USER_ID` to `gclid`
+
+      * `USER_ID` to `customers/5277198417/conversionCustomVariables/21087767`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1787095'
+        sync_slug: all-events-to-google-ads
+        sync_name: All Events
