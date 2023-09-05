@@ -638,3 +638,28 @@ exposures:
         sync_id: '1762935'
         sync_slug: all-users-to-salesforce-marketing-cloud
         sync_name: All Users
+  - name: Hightouch-Sync-high-propensity-previous-9-m-purchasers-to-snowflake
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1786634
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880904)**
+      to destination
+      **[Snowflake](https://app.hightouch.com/ecommerce-pristine-demo/destinations/72974)**
+      of type **snowflake-destination**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1786634'
+        sync_slug: high-propensity-previous-9-m-purchasers-to-snowflake
+        sync_name: High Propensity + Previous 9M Purchasers
