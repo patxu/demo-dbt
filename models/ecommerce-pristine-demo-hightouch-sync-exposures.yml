@@ -423,3 +423,32 @@ exposures:
         sync_id: '1786634'
         sync_slug: high-propensity-previous-9-m-purchasers-to-snowflake
         sync_name: High Propensity + Previous 9M Purchasers
+  - name: Hightouch-Sync-users-to-google-ads-v5p6w
+    type: application
+    owner:
+      email: leonie@hightouch.io
+      name: Leonie Van Der Sleen
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1800259
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1219761)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+
+      * `FIRST_NAME` to `addressInfo.hashedFirstName`
+
+      * `LAST_NAME` to `addressInfo.hashedLastName`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1800259'
+        sync_slug: users-to-google-ads-v5p6w
+        sync_name: Basket
