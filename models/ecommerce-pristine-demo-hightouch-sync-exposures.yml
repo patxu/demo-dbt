@@ -476,7 +476,7 @@ exposures:
       hightouch:
         sync_id: '1801018'
         sync_slug: josh-test-audiece-to-facebook-custom-audiences
-        sync_name: Josh Test Audiece
+        sync_name: Josh Test Audience
   - name: Hightouch-Sync-josh-pds-test-to-salesforce-marketing-cloud
     type: application
     owner:
