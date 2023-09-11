@@ -537,3 +537,30 @@ exposures:
         sync_id: '1802367'
         sync_slug: users-to-hub-spot
         sync_name: Users
+  - name: Hightouch-Sync-all-users-to-active-campaign-2
+    type: application
+    owner:
+      email: jordan.pappas@hightouch.io
+      name: Jordan Pappas
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1818565
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1238783)**
+      to destination
+      **[ActiveCampaign](https://app.hightouch.com/ecommerce-pristine-demo/destinations/65660)**
+      of type **activeCampaign**
+
+
+      ### Columns used by this sync
+
+      * `FIRST_NAME` to `firstName`
+
+      * `LAST_NAME` to `lastName`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1818565'
+        sync_slug: all-users-to-active-campaign-2
+        sync_name: All users
