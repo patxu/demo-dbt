@@ -564,3 +564,32 @@ exposures:
         sync_id: '1818565'
         sync_slug: all-users-to-active-campaign-2
         sync_name: All users
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-zh8wz
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1828152
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1244840)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1828152'
+        sync_slug: users-to-facebook-custom-audiences-zh8wz
+        sync_name: Johns Audience
