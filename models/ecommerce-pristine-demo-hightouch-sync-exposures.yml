@@ -336,3 +336,46 @@ exposures:
         sync_id: '1801269'
         sync_slug: josh-pds-test-to-salesforce-marketing-cloud
         sync_name: Josh PDS Test
+  - name: Hightouch-Sync-audience-to-iterable
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1842110
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1252767)**
+      to destination
+      **[Iterable](https://app.hightouch.com/ecommerce-pristine-demo/destinations/57338)**
+      of type **iterable**
+
+
+      ### Columns used by this sync
+
+      * `FAVORITE_BRAND` to `Favorite Brand`
+
+      * `USER_ID` to `USER_ID`
+
+      * `LAST_NAME` to `LAST_NAME`
+
+      * `VIP_CUSTOMER` to `VIP_CUSTOMER`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `ENGAGEMENT_LAST_7_DAYS`
+
+      * `FIRST_NAME` to `FIRST_NAME`
+
+      * `SIGN_UP_DATE` to `signupDate`
+
+      * `EMAIL` to `EMAIL`
+
+      * `USER_ID` to `userId`
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1842110'
+        sync_slug: audience-to-iterable
+        sync_name: Audience
