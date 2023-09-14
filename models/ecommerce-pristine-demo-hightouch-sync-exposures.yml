@@ -437,3 +437,56 @@ exposures:
         sync_id: '1842395'
         sync_slug: users-to-facebook-custom-audiences-47xg9
         sync_name: vip and order last 7 days
+  - name: Hightouch-Sync-users-to-salesforce
+    type: application
+    owner:
+      email: dan.trant@hightouch.io
+      name: Daniel Trant
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1843018
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1253332)**
+      to destination
+      **[Salesforce](https://app.hightouch.com/ecommerce-pristine-demo/destinations/59635)**
+      of type **salesforce**
+
+
+      ### Columns used by this sync
+
+      * `LAST_NAME` to `LastName`
+
+      * `EMAIL` to `Email`
+
+      * `VIP_CUSTOMER` to `VIP_Customer__c`
+
+      * `ENGAGEMENT_LAST_7_DAYS` to `Engagement_Last_7_Days__c`
+
+      * `DASHBOARD_VIEWS` to `Dashboard_Views__c`
+
+      * `PAGEVIEWS` to `Pageviews__c`
+
+      * `TRIAL_USER` to `Trial_User__c`
+
+      * `SIGN_UP_DATE` to `Sign_Up_Date__c`
+
+      * `NUM_BLOG_POSTS_VIEWED` to `Num_Blog_Posts_Viewed__c`
+
+      * `FAVORITE_BRAND` to `Favorite_Brand__c`
+
+      * `AD_CONVERSION` to `Ad_Conversion__c`
+
+      * `LEAD_SCORE` to `Lead_Score__c`
+
+      * `LEAD_GRADE` to `Lead_Grade__c`
+
+      * `ACTIVE_POC` to `Active_POC__c`
+
+      * `FIRST_NAME` to `FirstName`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1843018'
+        sync_slug: users-to-salesforce
+        sync_name: users
