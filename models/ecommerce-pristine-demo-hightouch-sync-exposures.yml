@@ -379,3 +379,57 @@ exposures:
         sync_id: '1842110'
         sync_slug: audience-to-iterable
         sync_name: Audience
+  - name: Hightouch-Sync-users-to-klaviyo-keb-0r41h
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1844446
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1253996)**
+      to destination **[Klaviyo
+      (keb)](https://app.hightouch.com/ecommerce-pristine-demo/destinations/67594)**
+      of type **klaviyo**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `email`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1844446'
+        sync_slug: users-to-klaviyo-keb-0r41h
+        sync_name: Cart Abandoners
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-mr6kp
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1844447
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1253996)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1844447'
+        sync_slug: users-to-facebook-custom-audiences-mr6kp
+        sync_name: Cart Abandoners
