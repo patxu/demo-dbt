@@ -379,3 +379,32 @@ exposures:
         sync_id: '1842110'
         sync_slug: audience-to-iterable
         sync_name: Audience
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-r3nnb
+    type: application
+    owner:
+      email: kevintran@hightouch.io
+      name: Kevin Tran
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1842139
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1252840)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1842139'
+        sync_slug: users-to-facebook-custom-audiences-r3nnb
+        sync_name: Audience B
