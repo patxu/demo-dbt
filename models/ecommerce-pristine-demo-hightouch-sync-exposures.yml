@@ -460,3 +460,30 @@ exposures:
         sync_id: '1849286'
         sync_slug: cart-abandoners-to-google-ads
         sync_name: Cart Abandoners
+  - name: Hightouch-Sync-josh-test-audience-1-to-facebook-custom-audiences
+    type: application
+    owner:
+      email: joshcouper@hightouch.io
+      name: Josh Couper
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1850689
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1256540)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1850689'
+        sync_slug: josh-test-audience-1-to-facebook-custom-audiences
+        sync_name: Josh Test Audience 1
