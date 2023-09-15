@@ -433,3 +433,30 @@ exposures:
         sync_id: '1844447'
         sync_slug: users-to-facebook-custom-audiences-mr6kp
         sync_name: Cart Abandoners
+  - name: Hightouch-Sync-cart-abandoners-to-google-ads
+    type: application
+    owner:
+      email: ju@hightouch.io
+      name: Ju Lee
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1849286
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1253996)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `SIGN_UP_DATE` to `conversionDateTime`
+
+      * `EMAIL` to `gclid`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1849286'
+        sync_slug: cart-abandoners-to-google-ads
+        sync_name: Cart Abandoners
