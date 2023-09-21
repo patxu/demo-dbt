@@ -364,3 +364,28 @@ exposures:
         sync_id: '1907626'
         sync_slug: users-to-hub-spot-2
         sync_name: Users
+  - name: Hightouch-Sync-mongo-test-audience-to-facebook-custom-audiences
+    type: application
+    owner:
+      email: john.lopus@hightouch.io
+      name: John Lopus
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1915239
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1360388)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1915239'
+        sync_slug: mongo-test-audience-to-facebook-custom-audiences
+        sync_name: Mongo Test Audience
