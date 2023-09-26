@@ -124,17 +124,46 @@ exposures:
         sync_id: '1963042'
         sync_slug: users-to-google-ads-iphbn
         sync_name: johns audience
-  - name: Hightouch-Sync-users-to-google-ads-wdyrw
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-f4yei
     type: application
     owner:
-      email: kevintran@hightouch.io
-      name: Kevin Tran
+      email: david.heffernan@hightouch.io
+      name: David Heffernan
     depends_on:
       - ref('all_users')
-    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1963945
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1965444
     description: >-
       Hightouch Sync from dbt model
-      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/880391)**
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1403833)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1965444'
+        sync_slug: users-to-facebook-custom-audiences-f4yei
+        sync_name: Abandoned Cart
+  - name: Hightouch-Sync-users-to-google-ads-d8kz3
+    type: application
+    owner:
+      email: david.heffernan@hightouch.io
+      name: David Heffernan
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1965445
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1403833)**
       to destination **[Google
       Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
       of type **google**
@@ -150,6 +179,6 @@ exposures:
     tags: []
     meta:
       hightouch:
-        sync_id: '1963945'
-        sync_slug: users-to-google-ads-wdyrw
-        sync_name: Abandoned Cart Re-engagement Campaign
+        sync_id: '1965445'
+        sync_slug: users-to-google-ads-d8kz3
+        sync_name: Abandoned Cart
