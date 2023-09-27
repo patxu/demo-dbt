@@ -153,3 +153,61 @@ exposures:
         sync_id: '1969943'
         sync_slug: users-to-google-ads-l3n7z
         sync_name: Customers that have purchased
+  - name: Hightouch-Sync-users-to-facebook-custom-audiences-gjlkf
+    type: application
+    owner:
+      email: nate.argosh@hightouch.io
+      name: Nate Argosh
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1970541
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1403833)**
+      to destination **[Facebook Custom
+      Audiences](https://app.hightouch.com/ecommerce-pristine-demo/destinations/74157)**
+      of type **facebook**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `EMAIL`
+
+      * `FIRST_NAME` to `FN`
+
+      * `LAST_NAME` to `LN`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1970541'
+        sync_slug: users-to-facebook-custom-audiences-gjlkf
+        sync_name: Abandoned Cart
+  - name: Hightouch-Sync-users-to-google-ads-9eucw
+    type: application
+    owner:
+      email: nate.argosh@hightouch.io
+      name: Nate Argosh
+    depends_on:
+      - ref('all_users')
+    url: https://app.hightouch.com/ecommerce-pristine-demo/syncs/1970544
+    description: >-
+      Hightouch Sync from dbt model
+      **[all_users](https://app.hightouch.com/ecommerce-pristine-demo/models/1403833)**
+      to destination **[Google
+      Ads](https://app.hightouch.com/ecommerce-pristine-demo/destinations/56107)**
+      of type **google**
+
+
+      ### Columns used by this sync
+
+      * `EMAIL` to `hashedEmail`
+
+      * `FIRST_NAME` to `addressInfo.hashedFirstName`
+
+      * `LAST_NAME` to `addressInfo.hashedLastName`
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '1970544'
+        sync_slug: users-to-google-ads-9eucw
+        sync_name: Abandoned Cart
