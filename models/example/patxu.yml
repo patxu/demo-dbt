@@ -1,0 +1,7 @@
+name: Test model - Pat
+source: oracle
+type: table
+tableName: admin.patxu_testing
+isSchema: false
+primaryKey: ID
+tag: patxu
