@@ -1,14 +1,6 @@
 version: 2
 
 models:
-  - name: patxu_test_table
-    description: "patxu testing"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
   - name: all_events
     description: "Events captured on client product and server-side applications"
     columns:
