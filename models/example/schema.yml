@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: all_events
+  - name: patxu_testing
     description: "Events captured on client product and server-side applications"
     columns:
       - name: id
