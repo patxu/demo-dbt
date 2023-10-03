@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: all_events
-    description: "Events captured on client product and server-side applications"
+  - name: patxu_testing
+    description: "Test dbt schema"
     columns:
       - name: id
         description: "The primary key for this table"
