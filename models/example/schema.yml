@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: patxu
+  - name: patxu_test_table
     description: "patxu testing"
     columns:
       - name: id

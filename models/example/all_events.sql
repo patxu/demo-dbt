@@ -15,8 +15,7 @@ with source_data as (
 )
 
 select *
-from PRISTINE_ECOMMERCE.PUBLIC.EVENTS
-
+from patxu_testing
 /*
     Uncomment the line below to remove records with null `id` values
 */
