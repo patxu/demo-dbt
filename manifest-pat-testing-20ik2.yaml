@@ -1,0 +1,29 @@
+# READ ONLY FILE
+# Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
+
+sources:
+  snowflake:
+    name: Snowflake
+    type: snowflake
+  oracle-db-v2:
+    name: Oracle DB
+    type: oracle
+  postgre-sql:
+    name: PostgreSQL
+    type: postgres
+  'null':
+    name: incomplete-oauth
+    type: googlesheets
+  google-sheets:
+    name: Google Sheets
+    type: googlesheets
+destinations:
+  postgres:
+    name: Postgres
+    type: postgres
+  oracle-db:
+    name: Oracle DB
+    type: oracle-db
+  google-sheets:
+    name: Google Sheets
+    type: googlesheets
